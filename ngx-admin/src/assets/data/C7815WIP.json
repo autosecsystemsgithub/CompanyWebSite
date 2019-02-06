@@ -1,0 +1,215 @@
+﻿{
+  "ProdPreview": {
+    "Header": "VStarcam C7815WIP HD WIF Network Camera",
+    "ModelHeader": "Model No.:  C7815WIP",
+    "Desc": "C7815WIP HD WIF Network Camera,8-level user authority management, 8-level user authority management,can auto test chipset and software.support 128G TF card"
+  },
+  "ProdDes": {
+    "Folder": "C7815WIP_Des",
+    "Images": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ]
+  },
+  "ProductSpec": {
+    "Model": "C7815WIP",
+    "tableValues": [
+      {
+        "name": "FEATURES",
+        "values": [
+
+          {
+            "name": "SYSTEM SECURITY",
+            "value": "8-level user authority management, built in watchdog,can auto test chipset and software."
+          },
+          {
+            "name": "BUILT-IN DYNAMIC IP DOMAIN SYSTEM (FREE)",
+            "value": "No need domain name, support dynamic IP."
+          },
+          {
+            "name": "MOBILEVIEW PLATFORM",
+            "value": "No need install software, multi-channel mobile view, support mobile view alarm snapshot."
+          },
+          {
+            "name": "PLUG AND PLAY",
+            "value": "Plug and Play technology applied.99% penetration rate. Only three steps to view image."
+          },
+          {
+            "name": "UID TECHNOLOGY",
+            "value": "Unique scan UID to add camera, easy to operate, and highly confidential."
+          },
+          {
+            "name": "CMS",
+            "value": "1,4,9,16,25,36,64,81-channel central management surveillance system, no user limitation. Centralized monitoring, remote recording, remote playback."
+          }
+        ]
+      },
+      {
+        "name": "CORE",
+        "values": [
+
+          {
+            "name": "O.S",
+            "value": "Built in Linux"
+          },
+          {
+            "name": "CONTROL PROTOCOL",
+            "value": "ONVIF 2.4 protocol,high interoperability"
+          },
+          {
+            "name": "PROCESSOR",
+            "value": "Hi3518E processor,built in ARM9 @Max. 440MHz and High-speed video co-processor"
+          }
+        ]
+      },
+      {
+        "name": "VIDEO",
+        "values": [
+
+          {
+            "name": "COMPRESSION FORMAT",
+            "value": "H.264 Baseline Profile@H.264 Main Profile@MJPEG/JPEG Baseline"
+          },
+          {
+            "name": "RESOLUTION/FRAME RATE",
+            "value": "720p/VGA/QVGA 30fps/25fps"
+          },
+          {
+            "name": "IMAGE ADJUSTMENT",
+            "value": "Brightness, Contrast, Saturation are adjustable"
+          },
+          {
+            "name": "SENSOR",
+            "value": "1/4 720p Progressive CMOS sensor"
+          },
+          {
+            "name": "MINIMUM ILLUMINATION",
+            "value": "1.0 Lux / F1.2"
+          },
+          {
+            "name": "CMOS",
+            "value": "support AWB,AGC,AE"
+          },
+          {
+            "name": "SENSOR SIZE",
+            "value": "3.84mm×2.16mm"
+          },
+          {
+            "name": "VIDEO CODING",
+            "value": "Multi stream：720P@30fps+VGA@30fps+QVGA@30fps+720P @1fsJPEG capture"
+          },
+          {
+            "name": "BIT RATE",
+            "value": "CBR/VBR,output range：32kbps～40Mbps"
+          },
+          {
+            "name": "LENS/VIEWING ANGLE",
+            "value": "3.6mm/56.14°"
+          }
+        ]
+      },
+      {
+        "name": "NIGHT VISION",
+        "values": [
+
+          {
+            "name": "NIGHT VISION",
+            "value": "Dual IR-CUT Filter auto switch, 30pcs 850nmΦ5mm LED,15m IR distance"
+          }
+        ]
+      },
+      {
+        "name": "NETWORK",
+        "values": [
+
+          {
+            "name": "SOCKET",
+            "value": "10/100Mb self-adaptable Ethernet slot"
+          },
+          {
+            "name": "NETWORK PROTOCOL",
+            "value": "TCP/IP,HTTP,RTSP,TCP,UDP,SMTP,FTP,DHCP,DNS,DDNS,NTP,UPnP,,P2P ect."
+          },
+          {
+            "name": "ONLINE VISITOR",
+            "value": "Support 4 online visitors viewing simutaneously"
+          },
+          {
+            "name": "IP ADDRESS",
+            "value": "Dynamic IP and static IP address"
+          },
+          {
+            "name": "WIFI",
+            "value": "WIFI 802.11 b/g/n"
+          },
+          {
+            "name": "NETWORK ADAPTABILITY",
+            "value": "can auto adjust stream and frame rate according to the bandwidth"
+          }
+        ]
+      },
+      {
+        "name": "OTHERS",
+        "values": [
+
+          {
+            "name": "HOUSING MATERIAL",
+            "value": "Engineering-plastics"
+          },
+          {
+            "name": "USE ENVIROMENT",
+            "value": "both indoor and outdoor"
+          },
+          {
+            "name": "POWER SUPPLY",
+            "value": "DC12V±10%"
+          },
+          {
+            "name": "WORKING TEMPERATURE",
+            "value": "-20 ~ 50 ℃"
+          },
+          {
+            "name": "RTP",
+            "value": "Support RTP, can auto adjust time when restart after power failure."
+          },
+          {
+            "name": "ACCESSORIES",
+            "value": "Power adapter, user manual, warranty card,mounting bracket,screws"
+          }
+        ]
+      },
+      {
+        "name": "ALARM",
+        "values": [
+
+          {
+            "name": "MOTIOIN DETECTION",
+            "value": "can setup motion detection sensitivity"
+          },
+          {
+            "name": "ALARM NOTIFICATION",
+            "value": "E-mail snapshot, FTP upload alarm pic"
+          }
+        ]
+      },
+      {
+        "name": "SYSTEM REQUIREMENTS",
+        "values": [
+
+          {
+            "name": "OPERATING SYSTEM",
+            "value": "Win98 SE/ME/2000/XP/Vista/win7 IE5.0, NET4.5, firefox, chrome"
+          }
+        ]
+      },
+      {
+        "name": "CERTIFICATE",
+        "values": [
+
+          {
+            "name": "CERTIFICATES",
+            "value": "ISO FCC CE RoHS"
+          }
+        ]
+      }
+    ]
+  }
+
+}

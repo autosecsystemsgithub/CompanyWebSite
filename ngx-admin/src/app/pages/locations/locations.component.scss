@@ -1,0 +1,15 @@
+@import '../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+.location-container {
+  .fa {
+    margin-right: 15px;
+  }
+
+  .link {
+    color: #0094ff;
+    cursor:pointer;
+    text-decoration:underline;
+  }
+}
