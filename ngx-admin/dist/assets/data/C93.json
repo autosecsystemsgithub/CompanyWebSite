@@ -1,0 +1,179 @@
+﻿{
+  "ProdDes": {
+    "Images": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18" ]
+  },
+  "ProductSpec": {
+    "Model": "C93",
+    "tableValues": [
+      {
+        "name": "System",
+        "values": [
+          {
+            "name": "Operation system",
+            "value": "Embedded Linux OS"
+          },
+          {
+            "name": "Online visitor",
+            "value": "Support 4 visitors at the same time"
+          }
+        ]
+      },
+      {
+        "name": "Image Capture",
+        "values": [
+
+          {
+            "name": "Image sensor",
+            "value": "1/4 720p progressive CMOS sensor"
+          },
+          {
+            "name": "Minimum Illumination",
+            "value": "0.8Lux/F1.４（colourful model ）,0.3Lux/F1.（B&W mode）"
+          },
+          {
+            "name": "Lens",
+            "value": "3.6mm@F1.４"
+          },
+          {
+            "name": "View Angle",
+            "value": "56.14˚（diagonal)"
+          },
+          {
+            "name": "Night vision",
+            "value": "Dual Filter,IR-Cut，1pcs 850nm 42Mil LED,5m IR distance"
+          }
+        ]
+      },
+      {
+        "name": "VIDEO",
+        "values": [
+
+          {
+            "name": "Encode format",
+            "value": "H.264 main profile @ levels:4.0/Motion-JPEG"
+          },
+          {
+            "name": "Three stream",
+            "value": "720P@30fps+VGA@30fps+QVGA@30fps+720P @1fsJPEG capture"
+          },
+          {
+            "name": "Bit Rate",
+            "value": "128～4096kbps"
+          },
+          {
+            "name": "Maximum frame rate",
+            "value": "30 fps"
+          },
+          {
+            "name": "Image adjustment",
+            "value": "Contrast、Brightness、Saturation、Hue"
+          }
+        ]
+      },
+      {
+        "name": "Audio",
+        "values": [
+
+          {
+            "name": "Input",
+            "value": "1 Channel Internal -48dB Microphone"
+          },
+          {
+            "name": "Output",
+            "value": "Internal speaker(8Ω0.8W)"
+          },
+          {
+            "name": "Sampling frequency /width",
+            "value": "8KHz/16bit"
+          },
+          {
+            "name": "Compression format",
+            "value": "ADPCM/32kbps"
+          }
+        ]
+      },
+      {
+        "name": "NETWORK",
+        "values": [
+
+          {
+            "name": "Ethernet",
+            "value": "10Base-T / 100Base-TX, RJ45 connector"
+          },
+          {
+            "name": "Protocols",
+            "value": "TCP/IP,HTTP,RTSP,TCP,UDP,SMTP,FTP,DHCP,DNS,DDNS,NTP,UPnP,,P2P ect."
+          },
+          {
+            "name": "Wireless LAN",
+            "value": "IEEE802.11b/g/n"
+          },
+          {
+            "name": "Wireless LAN Frequency",
+            "value": "2.4~ 2.4835GHz"
+          },
+          {
+            "name": "Wireless LAN security",
+            "value": "64/128-bit WEP/WPA-PSK /WPA2-PSK data encryption"
+          }
+        ]
+      },
+      {
+        "name": "Pan-tilt",
+        "values": [
+          {
+            "name": "N/A",
+            "value": "N/A"
+          }
+        ]
+      },
+      {
+        "name": "Memory",
+        "values": [
+          {
+            "name": "Socket",
+            "value": "TF Push-push socket,Maximum support 128GB"
+          }
+        ]
+      },
+      {
+        "name": "ALARM",
+        "values": [
+          {
+            "name": "Alarm Trigger",
+            "value": "Motion detection"
+          },
+          {
+            "name": "Action",
+            "value": "Image E-mail/FTP image upload"
+          }
+        ]
+      },
+      {
+        "name": "Physical Environmental",
+        "values": [
+          {
+            "name": "Rated voltage",
+            "value": "DC5±0.3V"
+          },
+          {
+            "name": "Power consumption",
+            "value": "Related power:3.2Ｗ(IR opening )"
+          },
+          {
+            "name": "Operating condition",
+            "value": "Temperature:-10～50℃,humidity:＜90%"
+          },
+          {
+            "name": "Weight",
+            "value": "Gross：TBD g(Note: in kind prevail)"
+          },
+          {
+            "name": "Package size",
+            "value": "（L×W×H）"
+          }
+        ]
+      }
+    ]
+  }
+}
