@@ -1,0 +1,48 @@
+@import '../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+.container {
+  background-color:#fff;
+}
+.img-workflow {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.imgShowcase {
+  width:auto;
+  height:8vw;
+}
+.imgParter {
+  width:40vw;
+  height:auto;
+}
+.imgHeader {
+  width:40vw;
+  height:auto;
+}
+.left-margin {
+  margin-left:5px;
+}
+.hr-primary {
+ 
+}
+ul.bullet-points {
+  list-style: none;
+  padding: 0;
+
+
+  li {
+    padding-left: 1.3em;
+    line-height: 2;
+  }
+
+  li:before {
+    content: "\f1eb"; /* FontAwesome Unicode */
+    color: #87aeff;
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+  }
+}

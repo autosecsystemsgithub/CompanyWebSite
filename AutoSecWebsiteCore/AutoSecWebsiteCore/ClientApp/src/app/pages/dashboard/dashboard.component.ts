@@ -30,6 +30,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.router.navigateByUrl('pages/products');
     } else if (page == 'services') {
       this.router.navigateByUrl('pages/services');
+    } else if (page == 'aboutus') {
+      this.router.navigateByUrl('pages/aboutus');
     }
   }
   ngOnDestroy() {
