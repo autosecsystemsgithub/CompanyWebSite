@@ -32,7 +32,7 @@ namespace AutoSecWebsiteCore.Controllers
             
             try
             {
-                string htmlTemplate = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Template.html"));
+                string htmlTemplate = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Mail.html"));
                 string enquiryStr = contactUs.IsEnquiry ? "There is new sales enquiry!" : "There is new support request!" ;
                 MailMessage mailMessage = new MailMessage();
                 mailMessage.To.Add(contactUs.EmailAddress);
