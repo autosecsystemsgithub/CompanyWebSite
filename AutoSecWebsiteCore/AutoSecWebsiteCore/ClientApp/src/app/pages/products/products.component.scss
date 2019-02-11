@@ -1,0 +1,19 @@
+@import '../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+.product-pod {
+  background-color:#fff;
+  padding:10px;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  width: 300px;
+  height: auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index: 999;
+}

@@ -1,0 +1,180 @@
+﻿{
+  "ProdDes": {
+    "Images": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18" ]
+  },
+  "ProductSpec": {
+    "Model": "C46",
+    "tableValues": [
+      {
+        "name": "System",
+        "values": [
+          {
+            "name": "Operation system",
+            "value": "Embedded Linux OS"
+          },
+          {
+            "name": "Online visitor",
+            "value": "Support 4 visitors at the same time"
+          }
+        ]
+      },
+      {
+        "name": "Image Capture",
+        "values": [
+
+          {
+            "name": "Image sensor",
+            "value": "Sony 1/4 inch 720p Progressive Scan CMOS"
+          },
+          {
+            "name": "Minimum Illumination",
+            "value": "0.3～0.5Lux（Color mode）,0.1Lux（B&W Mode）"
+          },
+          {
+            "name": "Lens",
+            "value": "3.2mm@F2.2"
+          },
+          {
+            "name": "View Angle",
+            "value": "85°（diagonal)"
+          },
+          {
+            "name": "Night vision",
+            "value": "Dual Filter,IR-Cut，6pcs 850nm Φ5mm IR LED IR irradiation distance:5～10m"
+          }
+        ]
+      },
+      {
+        "name": "VIDEO",
+        "values": [
+
+          {
+            "name": "Encode format",
+            "value": "H.264 main profile @ levels:4.0/Motion-JPEG"
+          },
+          {
+            "name": "Three Stream",
+            "value": "Main Stream:720p(1280X720)@25fps, Sub Stream:360p(640X360)@25fps, Third Stream:180p(320X180)@10fps"
+          },
+          {
+            "name": "Bit Rate",
+            "value": "128～4096kbps"
+          },
+          {
+            "name": "Maximum frame rate",
+            "value": "25 fps"
+          },
+          {
+            "name": "Image adjustment",
+            "value": "Contrast、Brightness、Saturation、Hue"
+          }
+        ]
+      },
+      {
+        "name": "Audio",
+        "values": [
+
+          {
+            "name": "Input",
+            "value": "Built-in -38dB Microphone"
+          },
+          {
+            "name": "Output",
+            "value": "Built-in 8Ω1W speaker"
+          },
+          {
+            "name": "Sampling frequency /width",
+            "value": "8KHz/16bit"
+          },
+          {
+            "name": "Compression format",
+            "value": "ADPCM/32kbps"
+          }
+        ]
+      },
+      {
+        "name": "NETWORK",
+        "values": [
+
+          {
+            "name": "Ethernet",
+            "value": "10Base-T / 100Base-TX, RJ45 connector"
+          },
+          {
+            "name": "Protocols",
+            "value": "TCP/IP,HTTP,RTSP,TCP,UDP,SMTP,FTP,DHCP,DNS,DDNS,NTP,UPnP,,P2P ect."
+          },
+          {
+            "name": "Wireless LAN",
+            "value": "IEEE802.11b/g/n"
+          },
+          {
+            "name": "Wireless LAN Frequency",
+            "value": "2.4~ 2.4835GHz"
+          },
+          {
+            "name": "Wireless LAN security",
+            "value": "64/128-bit WEP/WPA-PSK /WPA2-PSK data encryption"
+          }
+        ]
+      },
+      {
+        "name": "Pan-tilt",
+        "values": [
+          {
+            "name": "Pan-tilt",
+            "value": "Pan：350°,tilt：90°（Privacy position is not included"
+          },
+          {
+            "name": "Preset position",
+            "value": "PC APP：support 16 positions,  phone APP:support 5 positions"
+          }
+        ]
+      },
+      {
+        "name": "Memory",
+        "values": [
+          {
+            "name": "Socket",
+            "value": "TF Push-push socket,Maximum support 128GB"
+          }
+        ]
+      },
+      {
+        "name": "ALARM",
+        "values": [
+          {
+            "name": "Alarm Trigger",
+            "value": "Motion detection"
+          }
+        ]
+      },
+      {
+        "name": "Physical Environmental",
+        "values": [
+          {
+            "name": "Rated voltage",
+            "value": "DC12V±5%"
+          },
+          {
+            "name": "Power consumption",
+            "value": "Rated power:2.40 W(IR LED on), Maximum Power: 5.25W（Pan&Tilt on"
+          },
+          {
+            "name": "Operating condition",
+            "value": "Temperature:-10～50℃,humidity:＜90%"
+          },
+          {
+            "name": "Weight",
+            "value": "Gross：210g(Note: in kind prevail)"
+          },
+          {
+            "name": "Package size",
+            "value": "192x153x112mm(L×W×H)"
+          }
+        ]
+      }
+    ]
+  }
+}
+
