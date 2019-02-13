@@ -14,5 +14,9 @@ namespace AutoSecWebsiteCore.Models
         public bool SMTPUseSSL { get; set; }
         public string SMTPFromAddress { get; set; }
         public string SMTPSubject { get; set; }
+        public string MailTemplate { get; set; }
+        public string SMTPToAddressAfterSales { get; set; }
+        public string SMTPToAddressSales { get; set; }
+        public List<string> SMTPCCAddresses { get; set; }
     }
 }

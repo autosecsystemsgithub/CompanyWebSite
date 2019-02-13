@@ -10,7 +10,7 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
-    <AssemblyName>ASP.NET Core 2.1 with Angular 7</AssemblyName>
+    <AssemblyName>AutoSecWebsiteCore</AssemblyName>
     <RootNamespace>AutoSecWebsiteCore</RootNamespace>
     <Version>1.7.0</Version>
     <Authors>Bernardo Lloret-Fuentes</Authors>

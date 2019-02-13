@@ -32,10 +32,11 @@ namespace AutoSecWebsiteCore.Controllers
             
             try
             {
-                string htmlTemplate = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Mail.html"));
+                string htmlTemplate = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", AppSettings.MailTemplate));
                 string enquiryStr = contactUs.IsEnquiry ? "There is new sales enquiry!" : "There is new support request!" ;
                 MailMessage mailMessage = new MailMessage();
-                mailMessage.To.Add(contactUs.EmailAddress);
+                mailMessage.To.Add(contactUs.IsEnquiry ? AppSettings.SMTPToAddressSales : AppSettings.SMTPToAddressAfterSales);
+                AppSettings.SMTPCCAddresses.ForEach(s => mailMessage.CC.Add(s));
                 mailMessage.From = new MailAddress(AppSettings.SMTPFromAddress);
                 mailMessage.Subject = AppSettings.SMTPSubject+ contactUs.FullName;
                 mailMessage.Body = string.Format(htmlTemplate, enquiryStr, contactUs.FullName, contactUs.PhoneNumber, contactUs.EmailAddress, contactUs.Message);
