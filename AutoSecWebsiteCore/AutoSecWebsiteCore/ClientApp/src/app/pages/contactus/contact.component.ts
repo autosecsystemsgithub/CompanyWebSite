@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 import { NbToastrService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-contact',
+  selector: 'app-contact',
   styleUrls: ['./contact.component.scss'],
   templateUrl: './contact.component.html',
 })
@@ -21,15 +21,17 @@ export class ContactComponent {
   public emailStatus: string;
   emailURL: any;
   contactDetails: any = {
-    name: '',
-    phone: '',
-    email: '',
-    message: ''
+    EmailAddress: '',
+    PhoneNumber: '',
+    FullName: '',
+    Message: '',
+    IsEnquiry: true
   };
 
-  constructor(private toastrService: NbToastrService, private themeService: NbThemeService, private http: HttpClient)
-  {
-    this.emailURL = "http://localhost:3002/send";
+  public resetContact: any;
+
+  constructor(private toastrService: NbToastrService, private themeService: NbThemeService, private http: HttpClient) {
+    this.emailURL = 'http://autosecsystems.azurewebsites.net/api/mailservice/sendmail';
     this.headerJson = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
@@ -39,21 +41,15 @@ export class ContactComponent {
     };
     this.emailStatus = '';
     this.headerConfig = new HttpHeaders(this.headerJson);
+    this.resetContact = Object.assign({}, this.contactDetails);
   }
 
 
   sendMessage() {
-
-    const payload = new HttpParams()
-      .set('email', this.contactDetails.email)
-      .set('message', this.contactDetails.message)
-      .set('phone', this.contactDetails.phone)
-      .set('name', this.contactDetails.name);
-
-    this.http.post(this.emailURL, payload)
+    this.http.post(this.emailURL, this.contactDetails)
       .subscribe(response => {
-        this.emailStatus = response['status'];
-        if (response['status'] == 'ok') {
+        if (response === 'True') {
+          this.contactDetails = Object.assign({}, this.resetContact);
           this.toastrService.show('Email Sent Successfully!, we will contact you soon!', 'Success');
         } else {
           this.toastrService.show('Email not sent', 'Error!');

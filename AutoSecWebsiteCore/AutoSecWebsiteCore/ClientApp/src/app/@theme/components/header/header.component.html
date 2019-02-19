@@ -16,19 +16,22 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav">
         <li class="nav-item active" [ngClass]="{'active': selectedItem == 'home'}">
-          <a (click)="pageRoute('home')"  class="nav-link">Home</a>
+          <a (click)="pageRoute('home')" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': selectedItem == 'about'}">
+          <a (click)="pageRoute('about')" class="nav-link">About Us</a>
         </li>
         <li class="nav-item" [ngClass]="{'active': selectedItem == 'products'}">
-          <a (click)="pageRoute('products')"  class="nav-link">Products</a>
+          <a (click)="pageRoute('products')" class="nav-link">Products</a>
         </li>
         <li class="nav-item" [ngClass]="{'active': selectedItem == 'services'}">
-          <a (click)="pageRoute('services')"  class="nav-link">Services</a>
+          <a (click)="pageRoute('services')" class="nav-link">Services</a>
         </li>
         <li class="nav-item" [ngClass]="{'active': selectedItem == 'locations'}">
-          <a (click)="pageRoute('locations')"  class="nav-link">Locations</a>
+          <a (click)="pageRoute('locations')" class="nav-link">Locations</a>
         </li>
         <li class="nav-item" [ngClass]="{'active': selectedItem == 'contactus'}">
-          <a (click)="pageRoute('contactus')"  class="nav-link">Contact Us</a>
+          <a (click)="pageRoute('contactus')" class="nav-link">Contact Us</a>
         </li>
       </ul>
     </div>

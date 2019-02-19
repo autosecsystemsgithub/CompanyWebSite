@@ -45,6 +45,8 @@ export class HeaderComponent implements OnInit {
     this.selectedItem = page;
     if (page == 'home') {
       this.router.navigateByUrl('pages/dashboard');
+    } else if (page == 'about') {
+      this.router.navigateByUrl('pages/aboutus');
     } else if (page == 'products') {
       this.router.navigateByUrl('pages/products');
     } else if (page == 'services') {

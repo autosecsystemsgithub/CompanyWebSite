@@ -17,11 +17,24 @@
   <div class="row">
     <div class="col-md-8">
       <h3></h3>
-      <form  #contactForm="ngForm" name="sentMessage" id="contactForm" novalidate>
+      <form #contactForm="ngForm" name="sentMessage" id="contactForm" novalidate>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Type of enquiry:</label><br />
+            <label class="form-check-inline" style="margin-right:0px !important">
+              <input class="form-check-input" type="radio" name="IsEnquiry" [value]="true" [(ngModel)]="contactDetails.IsEnquiry">
+            </label>
+            <label style="width:60px;line-height:2.5;">Sales </label>
+            <label class="form-check-inline" style="margin-right:0px !important">
+              <input class="form-check-input" type="radio" name="IsEnquiry" [value]="false" [(ngModel)]="contactDetails.IsEnquiry">
+            </label>
+            <label style="width:80px;line-height:2.5;">After sales </label>
+          </div>
+        </div>
         <div class="control-group form-group">
           <div class="controls">
             <label>Full Name:</label>
-            <input type="text" class="form-control" name="name" [(ngModel)]="contactDetails.name" id="name" required>
+            <input type="text" class="form-control" name="name" [(ngModel)]="contactDetails.FullName" id="name" required>
             <div class="error-Msg-Length">
               <span [hidden]="!name?.errors">Please enter your name.</span>
             </div>
@@ -30,7 +43,7 @@
         <div class="control-group form-group">
           <div class="controls">
             <label>Phone Number:</label>
-            <input type="tel" class="form-control"  name="phone" id="phone" [(ngModel)]="contactDetails.phone" required>
+            <input type="tel" class="form-control" name="phone" id="phone" [(ngModel)]="contactDetails.PhoneNumber" required>
             <div class="error-Msg-Length">
               <span [hidden]="!phone?.errors">Please enter your phone number.</span>
             </div>
@@ -39,7 +52,7 @@
         <div class="control-group form-group">
           <div class="controls">
             <label>Email Address:</label>
-            <input type="email" class="form-control" id="email" [email]="true" name="email" [(ngModel)]="contactDetails.email" required >
+            <input type="email" class="form-control" id="email" [email]="true" name="email" [(ngModel)]="contactDetails.EmailAddress" required>
             <div class="error-Msg-Length">
               <span [hidden]="!email?.errors">Please enter your email  .</span>
             </div>
@@ -48,7 +61,7 @@
         <div class="control-group form-group">
           <div class="controls">
             <label>Message:</label>
-            <textarea rows="10" cols="100" class="form-control" name="message" [(ngModel)]="contactDetails.message" id="message" required maxlength="999" style="resize:none"></textarea>
+            <textarea rows="10" cols="100" class="form-control" name="message" [(ngModel)]="contactDetails.Message" id="message" required maxlength="999" style="resize:none"></textarea>
             <div class="error-Msg-Length">
               <span [hidden]="!message?.errors">Please enter your message  .</span>
             </div>
@@ -56,7 +69,7 @@
         </div>
         <div id="success"></div>
         <!-- For success/fail messages -->
-        <button type="submit" [disabled]="!contactForm.form.valid" (click)="sendMessage()"class="btn btn-primary">Send Message</button>
+        <button [disabled]="!contactForm.form.valid" (click)="sendMessage()" class="btn btn-primary">Send Email</button>
       </form>
     </div>
 

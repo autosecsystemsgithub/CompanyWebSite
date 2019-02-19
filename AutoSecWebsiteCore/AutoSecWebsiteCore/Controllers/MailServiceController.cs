@@ -27,7 +27,7 @@ namespace AutoSecWebsiteCore.Controllers
         }
 
         [HttpPost("[action]")]
-        public bool SendMail(ContactUsModel contactUs)
+        public string SendMail(ContactUsModel contactUs)
         {
             
             try
@@ -46,11 +46,11 @@ namespace AutoSecWebsiteCore.Controllers
                 smtpClient.EnableSsl = AppSettings.SMTPUseSSL;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.Send(mailMessage);
-                return true;
+                return true.ToString();
             }
             catch (Exception ex)
             {
-                return false;
+                return ex.Message;
             }
         }
     }
