@@ -28,7 +28,7 @@
             <label class="form-check-inline" style="margin-right:0px !important">
               <input class="form-check-input" type="radio" name="IsEnquiry" [value]="false" [(ngModel)]="contactDetails.IsEnquiry">
             </label>
-            <label style="width:80px;line-height:2.5;">After sales </label>
+            <label style="width:80px;line-height:2.5;">Support </label>
           </div>
         </div>
         <div class="control-group form-group">
@@ -72,7 +72,32 @@
         <button [disabled]="!contactForm.form.valid" (click)="sendMessage()" class="btn btn-primary">Send Email</button>
       </form>
     </div>
+    <!--pod starts-->
+    <div class="col-md-4">
+     
+      <div class="panel panel-default panel-spacing">
+          <div class="panel-heading">
+            <h4><i class="fa fa-address-card-o"></i> Support</h4>
+          </div>
+          <div class="panel-body">
+            <h6><i class="fa fa-whatsapp"></i> +91-9884580511</h6>
+            <h6><i class="fa fa-envelope-o"></i> autosecsystemsbangalore@gmail.com</h6>
+          </div>
+      </div>
 
+      <div class="panel panel-default panel-spacing">
+        <div class="panel-heading">
+          <h4><i class="fa fa-address-card-o"></i> Sales</h4>
+        </div>
+        <div class="panel-body">
+          <h6><i class="fa fa-whatsapp"></i> +91-9148959512</h6>
+          <h6><i class="fa fa-envelope-o"></i> autosecsystemsmadurai@gmail.com</h6>
+        </div>
+      </div>
+   
+
+    </div>
+    <!--pod ends-->
   </div>
   <!-- /.row -->
 

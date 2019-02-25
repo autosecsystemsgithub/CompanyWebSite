@@ -31,7 +31,8 @@ export class ContactComponent {
   public resetContact: any;
 
   constructor(private toastrService: NbToastrService, private themeService: NbThemeService, private http: HttpClient) {
-    this.emailURL = 'http://autosecsystems.azurewebsites.net/api/mailservice/sendmail';
+    this.emailURL = 'https://autosecsystems.azurewebsites.net/api/mailservice/sendmail';
+    //this.emailURL = 'http://localhost:29164/api/mailservice/sendmail';
     this.headerJson = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
@@ -44,18 +45,25 @@ export class ContactComponent {
     this.resetContact = Object.assign({}, this.contactDetails);
   }
 
+  callbackfunc(response) {
+    console.log(response);
+    if (response.StatusCode === true) {
+      this.contactDetails = Object.assign({}, this.resetContact);
+      this.toastrService.show('Email Sent Successfully!, we will contact you soon!', 'Success');
+    } else {
+      console.log(response.StatusData);
+      this.toastrService.show('Email not sent', 'Error!');
+    }
+  }
 
   sendMessage() {
     this.http.post(this.emailURL, this.contactDetails)
       .subscribe(response => {
-        if (response === 'True') {
-          this.contactDetails = Object.assign({}, this.resetContact);
-          this.toastrService.show('Email Sent Successfully!, we will contact you soon!', 'Success');
-        } else {
-          this.toastrService.show('Email not sent', 'Error!');
-        }
+        this.callbackfunc(response);
+      },
+      error => {
+        console.log(error); // Error if any
       });
 
   }
-
  }

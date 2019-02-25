@@ -10,6 +10,8 @@ using AutoSecWebsiteCore.Models;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 using System.Text;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace AutoSecWebsiteCore.Controllers
 {
@@ -33,12 +35,12 @@ namespace AutoSecWebsiteCore.Controllers
             try
             {
                 string htmlTemplate = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", AppSettings.MailTemplate));
-                string enquiryStr = contactUs.IsEnquiry ? "There is new sales enquiry!" : "There is new support request!" ;
+                string enquiryStr = contactUs.IsEnquiry ? "There is new sales enquiry!" : "There is new support request!";
                 MailMessage mailMessage = new MailMessage();
                 mailMessage.To.Add(contactUs.IsEnquiry ? AppSettings.SMTPToAddressSales : AppSettings.SMTPToAddressAfterSales);
                 AppSettings.SMTPCCAddresses.ForEach(s => mailMessage.CC.Add(s));
                 mailMessage.From = new MailAddress(AppSettings.SMTPFromAddress);
-                mailMessage.Subject = AppSettings.SMTPSubject+ contactUs.FullName;
+                mailMessage.Subject = AppSettings.SMTPSubject + contactUs.FullName;
                 mailMessage.Body = string.Format(htmlTemplate, enquiryStr, contactUs.FullName, contactUs.PhoneNumber, contactUs.EmailAddress, contactUs.Message);
                 mailMessage.IsBodyHtml = true;
                 SmtpClient smtpClient = new SmtpClient(AppSettings.SMTPServer, AppSettings.SMTPPort);
@@ -46,11 +48,17 @@ namespace AutoSecWebsiteCore.Controllers
                 smtpClient.EnableSsl = AppSettings.SMTPUseSSL;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.Send(mailMessage);
-                return true.ToString();
-            }
+                dynamic resultData = new JObject();
+                resultData.StatusCode = true;
+                resultData.StatusData = "Successfully sent";
+                return JsonConvert.SerializeObject(resultData);
+            }  
             catch (Exception ex)
             {
-                return ex.Message;
+                dynamic resultData = new JObject();
+                resultData.StatusCode = false;
+                resultData.StatusData = ex.Message;
+                return JsonConvert.SerializeObject(resultData);
             }
         }
     }
