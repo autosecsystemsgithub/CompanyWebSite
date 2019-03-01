@@ -54,10 +54,9 @@ import { StateService } from '../../../@core/utils';
                    state="collapsed"
                    fixed
                    [end]="sidebar.id !== 'end'">
-        <ngx-theme-settings *ngIf="currentTheme !== 'corporate'"></ngx-theme-settings>
       </nb-sidebar>
     </nb-layout>
-    <ngx-toggle-settings-button *ngIf="currentTheme !== 'corporate'"></ngx-toggle-settings-button>
+  
   `,
 })
 export class SampleLayoutComponent implements OnDestroy {

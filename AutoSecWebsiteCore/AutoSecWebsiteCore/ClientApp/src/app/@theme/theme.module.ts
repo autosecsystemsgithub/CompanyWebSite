@@ -34,24 +34,13 @@ import {
   NbSpinnerModule,
   NbRadioModule,
   NbSelectModule,
-  NbChatModule,
   NbTooltipModule,
-  NbCalendarKitModule,
 } from '@nebular/theme';
-
-import { NbSecurityModule } from '@nebular/security';
 
 import {
   FooterComponent,
   HeaderComponent,
-  SearchInputComponent,
-  ThemeSettingsComponent,
-  SwitcherComponent,
-  LayoutDirectionSwitcherComponent,
-  ThemeSwitcherComponent,
-  TinyMCEComponent,
-  ThemeSwitcherListComponent,
-  ToggleSettingsButtonComponent,
+  TinyMCEComponent
 } from './components';
 import {
   CapitalizePipe,
@@ -62,10 +51,7 @@ import {
   EvaIconsPipe,
 } from './pipes';
 import {
-  OneColumnLayoutComponent,
   SampleLayoutComponent,
-  ThreeColumnsLayoutComponent,
-  TwoColumnsLayoutComponent,
 } from './layouts';
 import { DEFAULT_THEME } from './styles/theme.default';
 import { COSMIC_THEME } from './styles/theme.cosmic';
@@ -87,7 +73,6 @@ const NB_MODULES = [
   NbPopoverModule,
   NbContextMenuModule,
   NgbModule,
-  NbSecurityModule, // *nbIsGranted directive,
   NbProgressBarModule,
   NbCalendarModule,
   NbCalendarRangeModule,
@@ -102,33 +87,17 @@ const NB_MODULES = [
   NbWindowModule,
   NbAlertModule,
   NbSpinnerModule,
-  NbRadioModule,
-  NbSelectModule,
-  NbChatModule,
-  NbTooltipModule,
-  NbCalendarKitModule,
+  NbRadioModule
 ];
 
 const COMPONENTS = [
-  SwitcherComponent,
-  LayoutDirectionSwitcherComponent,
-  ThemeSwitcherComponent,
-  ThemeSwitcherListComponent,
   HeaderComponent,
   FooterComponent,
-  SearchInputComponent,
-  ThemeSettingsComponent,
   TinyMCEComponent,
-  OneColumnLayoutComponent,
-  SampleLayoutComponent,
-  ThreeColumnsLayoutComponent,
-  TwoColumnsLayoutComponent,
-  ToggleSettingsButtonComponent,
+  SampleLayoutComponent
 ];
 
-const ENTRY_COMPONENTS = [
-  ThemeSwitcherListComponent,
-];
+const ENTRY_COMPONENTS = [];
 
 const PIPES = [
   CapitalizePipe,
@@ -152,9 +121,6 @@ const NB_THEME_PROVIDERS = [
   ...NbDialogModule.forRoot().providers,
   ...NbWindowModule.forRoot().providers,
   ...NbToastrModule.forRoot().providers,
-  ...NbChatModule.forRoot({
-    messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY',
-  }).providers,
 ];
 
 @NgModule({
