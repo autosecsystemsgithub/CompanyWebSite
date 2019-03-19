@@ -40,7 +40,7 @@ import {
 import {
   FooterComponent,
   HeaderComponent,
-  TinyMCEComponent
+ // TinyMCEComponent
 } from './components';
 import {
   CapitalizePipe,
@@ -93,7 +93,7 @@ const NB_MODULES = [
 const COMPONENTS = [
   HeaderComponent,
   FooterComponent,
-  TinyMCEComponent,
+ // TinyMCEComponent,
   SampleLayoutComponent
 ];
 

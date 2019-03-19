@@ -34,7 +34,7 @@
         <div class="control-group form-group">
           <div class="controls">
             <label>Full Name:</label>
-            <input type="text" class="form-control" name="name" [(ngModel)]="contactDetails.FullName" id="name" required>
+            <input type="text" class="form-control" name="name" [(ngModel)]="contactDetails.FullName" #name="ngModel" id="name" required>
             <div class="error-Msg-Length">
               <span [hidden]="!name?.errors">Please enter your name.</span>
             </div>
@@ -43,7 +43,7 @@
         <div class="control-group form-group">
           <div class="controls">
             <label>Phone Number:</label>
-            <input type="tel" class="form-control" name="phone" id="phone" [(ngModel)]="contactDetails.PhoneNumber" required>
+            <input type="tel" class="form-control" name="phone" id="phone" #phone="ngModel" [(ngModel)]="contactDetails.PhoneNumber" required>
             <div class="error-Msg-Length">
               <span [hidden]="!phone?.errors">Please enter your phone number.</span>
             </div>
@@ -52,7 +52,7 @@
         <div class="control-group form-group">
           <div class="controls">
             <label>Email Address:</label>
-            <input type="email" class="form-control" id="email" [email]="true" name="email" [(ngModel)]="contactDetails.EmailAddress" required>
+            <input type="email" class="form-control" id="email" [email]="true" #email="ngModel" name="email" [(ngModel)]="contactDetails.EmailAddress" required>
             <div class="error-Msg-Length">
               <span [hidden]="!email?.errors">Please enter your email  .</span>
             </div>
@@ -61,7 +61,7 @@
         <div class="control-group form-group">
           <div class="controls">
             <label>Message:</label>
-            <textarea rows="10" cols="100" class="form-control" name="message" [(ngModel)]="contactDetails.Message" id="message" required maxlength="999" style="resize:none"></textarea>
+            <textarea rows="10" cols="100" class="form-control" #message="ngModel" name="message" [(ngModel)]="contactDetails.Message" id="message" required maxlength="999" style="resize:none"></textarea>
             <div class="error-Msg-Length">
               <span [hidden]="!message?.errors">Please enter your message  .</span>
             </div>

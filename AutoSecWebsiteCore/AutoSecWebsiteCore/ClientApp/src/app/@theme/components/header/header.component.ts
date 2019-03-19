@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Routes, RouterModule, Router } from '@angular/router';
 import { NbMenuService, NbSidebarService } from '@nebular/theme';
-import { UserData } from '../../../@core/data/users';
 import { AnalyticsService } from '../../../@core/utils';
 import { LayoutService } from '../../../@core/utils';
 
@@ -22,16 +21,12 @@ export class HeaderComponent implements OnInit {
 
   constructor(private sidebarService: NbSidebarService,
               private menuService: NbMenuService,
-              private userService: UserData,
-              private analyticsService: AnalyticsService,
               private layoutService: LayoutService,
               private router: Router) {
   }
 
   ngOnInit() {
     this.selectedItem = 'home'; // set initial page active
-    this.userService.getUsers()
-      .subscribe((users: any) => this.user = users.nick);
   }
 
   toggleSidebar(): boolean {
@@ -63,6 +58,5 @@ export class HeaderComponent implements OnInit {
   }
 
   startSearch() {
-    this.analyticsService.trackEvent('startSearch');
   }
 }
